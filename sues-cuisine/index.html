@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sue’s Cuisine | Flavour With Love, Arouca</title>
+<meta name="description" content="Home-style BBQ, curries, roti and Soup Saturdays in Arouca, Trinidad. Call or WhatsApp to order.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ea;--card:#fff;--ink:#1d3a2c;--muted:#58705f;--green:#24583f;--mango:#f0a30a;--line:#e6dcc3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1d16;--card:#17301f;--ink:#f1ecdc;--muted:#b3c7b6;--green:#7fd3a0;--line:#2a4a36}}
+:root[data-theme="dark"]{--bg:#0f1d16;--card:#17301f;--ink:#f1ecdc;--muted:#b3c7b6;--green:#7fd3a0;--line:#2a4a36}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.1}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--mango);outline-offset:3px}
+.wrap{max-width:48rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:800 1.15rem Fraunces,serif}
+.brand img{width:3.2rem;height:3.2rem}
+nav a{margin-left:1rem;text-decoration:none;font-weight:700;color:var(--muted)}
+.hero{padding:1.2rem 0 1rem}
+h1{font-size:clamp(2.4rem,10vw,4rem);font-weight:800;letter-spacing:-.02em}
+h1 em{color:var(--mango);font-style:normal}
+.lead{color:var(--muted);max-width:32rem;font-size:1.12rem;margin:1rem 0 1.4rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;background:var(--mango);color:#2a1b00;padding:.85rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--green)}
+.slider{position:relative;height:16rem;border-radius:1.2rem;overflow:hidden;margin-top:1.8rem;background:var(--line)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s}
+.slide.on{opacity:1}
+.slide img,.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:2.2rem 0}
+section>h2,.wrap>section>h2{font-size:2rem;margin-bottom:.5rem}
+.sub{color:var(--muted);margin:0 0 1.2rem}
+.menus{display:grid;gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.2rem 1.3rem}
+.card h3{font-size:1.25rem;margin-bottom:.6rem}
+.card ul{list-style:none;margin:0;padding:0}
+.card li{padding:.3rem 0;border-bottom:1px dotted var(--line)}
+.card li:last-child{border:0}
+.soup{background:var(--green);color:#fff;border:0}
+.soup li{border-color:#ffffff40}
+.soup .tag{display:inline-block;background:var(--mango);color:#2a1b00;font-weight:700;font-size:.85rem;border-radius:999px;padding:.1rem .7rem;margin-bottom:.6rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .soup{background:#245338}}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.tile{position:relative;aspect-ratio:1;border-radius:1rem;overflow:hidden;background:var(--line)}
+.info{display:grid;gap:1rem}
+.info p{margin:.25rem 0;color:var(--muted)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.15rem 0;color:var(--muted)}
+.hours td:last-child{text-align:right;color:var(--ink)}
+footer{padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+footer a{margin-right:1rem}
+@media (min-width:44rem){.menus{grid-template-columns:repeat(3,1fr)}.gal{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:1fr 1fr}.slider{height:21rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#"><img src="logo.png" alt="Sue’s Cuisine logo"><span>Sue’s Cuisine</span></a>
+  <nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+</header>
+
+<div class="hero">
+  <h1>Flavour <em>with love</em>, served daily.</h1>
+  <p class="lead">Home-style BBQ, curries, roti and Soup Saturdays, cooked fresh in Arouca. Call or WhatsApp to place your order.</p>
+  <div class="cta">
+    <a class="btn" href="https://wa.me/18683695306?text=Hi%20Sue%27s%20Cuisine%2C%20I%27d%20like%20to%20place%20an%20order.">Order on WhatsApp</a>
+    <a class="btn alt" href="tel:+18683695306">Call 369-5306</a>
+  </div>
+  <div class="slider" aria-label="Photos of our food">
+    <div class="slide on"><img src="images/1-fresh-from-the-counter.jpg" alt="fresh from the counter"></div>
+  </div>
+</div>
+
+<section id="menu">
+  <h2>What’s cooking</h2>
+  <p class="sub">Call or WhatsApp for today’s prices and what’s fresh.</p>
+  <div class="menus">
+    <div class="card"><h3>Daily favourites</h3><ul>
+      <li>Macaroni pie</li><li>Fried rice</li><li>BBQ pork</li><li>BBQ lamb</li><li>BBQ chicken</li><li>Potato salad</li><li>Fresh salad</li></ul></div>
+    <div class="card"><h3>Curry and roti</h3><ul>
+      <li>Dhalpourie roti</li><li>White rice</li><li>Dhal</li><li>Curry mango</li><li>Bhagi</li><li>Curry channa and potato</li><li>Curry goat</li><li>Curry beef</li><li>Curry chicken</li></ul></div>
+    <div class="card soup"><span class="tag">Every Saturday</span><h3>Soup Saturdays</h3><ul>
+      <li>Cow heel soup</li><li>Beef soup</li><li>Pig tail soup</li><li>Chicken foot soup</li><li>Mixed soup</li><li>Veggie soup</li></ul></div>
+  </div>
+</section>
+
+<section id="photos">
+  <h2>From our kitchen</h2>
+  <div class="gal">
+    <div class="tile"><img src="images/1-fresh-from-the-counter.jpg" alt="fresh from the counter"></div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2>Come by</h2>
+  <div class="info">
+    <div class="card"><h3>Hours</h3><table class="hours">
+      <tr><td>Monday to Saturday</td><td>10 a.m. to 2 p.m.</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr></table></div>
+    <div class="card"><h3>Find us</h3>
+      <p>#9 Forde Street, Arouca<br>Next to the Arouca Revival Tabernacle</p>
+      <p>Call or WhatsApp: 369-5306 or 281-2537</p>
+      <p><a class="btn" style="margin-top:.5rem" href="https://maps.app.goo.gl/ZAs9cYjn4hkzoqMm9">Get directions</a></p></div>
+  </div>
+</section>
+</div>
+
+<footer><div class="wrap">
+  <a href="https://www.facebook.com/suescuisinett/">Facebook</a>
+  <p>© Sue’s Cuisine. All your favourite meals available daily!</p>
+</div></footer>
+<script src="photos-list.js"></script>
+<script src="photos.js"></script>
+<script>
+(function(){var s=document.querySelectorAll('.slide'),i=0;if(s.length<2)return;setInterval(function(){s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on')},5000)})();
+</script>
+</body>
+</html>
